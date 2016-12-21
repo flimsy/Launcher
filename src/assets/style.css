@@ -1,0 +1,21 @@
+.hyperlink:visited{
+ -fx-focus-color:transparent;
+  -fx-border-color: transparent;
+  -fx-text-fill: #ff9e00;
+ -fx-underline: false;
+ }
+
+ .hyperlink {
+   -fx-border-color: transparent;
+    -fx-text-fill: #ff9e00;
+
+ }
+#mainPane {
+    -fx-background-image: url("/assets/bg.jpg");
+    -fx-effect: innershadow( gaussian , black ,100,0,0,0 );
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #ffc900;
+    -fx-underline: false;
+}

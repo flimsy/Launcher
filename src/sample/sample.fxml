@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" opacity="1.0" prefHeight="700.0" prefWidth="1050.0" style="-fx-background-color: #000000;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <HBox fx:id="topControls" alignment="TOP_RIGHT" onMouseDragged="#setPosition" onMousePressed="#setOffset" prefHeight="30.0" prefWidth="800.0" style="" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Hyperlink fx:id="minimizeBut" onAction="#minimizeWindow" text="_" textFill="WHITE">
+          <font>
+            <Font size="32.0" fx:id="x1" />
+          </font>
+          <HBox.margin>
+            <Insets top="-10.0" fx:id="x6" />
+          </HBox.margin>
+        </Hyperlink>
+        <Hyperlink fx:id="closeButton" font="$x1" onAction="#closeWindow" text="x" textFill="WHITE" HBox.margin="$x6" />
+      </children>
+    </HBox>
+    <HBox minHeight="40.0" prefHeight="47.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+      <children>
+        <Hyperlink alignment="CENTER" contentDisplay="CENTER" disable="false" graphicTextGap="6.0" mouseTransparent="false" prefWidth="150.0" style=".hyperlink:visited{&#10;-fx-focus-color:transparent;&#10;}" text="Play" textFill="#ffc900" textOverrun="ELLIPSIS" underline="false" visited="true" wrapText="true">
+          <effect>
+            <Glow fx:id="x3" />
+          </effect>
+          <font>
+            <Font name="Calibri Bold" size="22.0" fx:id="x2" />
+          </font>
+          <HBox.margin>
+            <Insets top="8.0" fx:id="x4" />
+          </HBox.margin>
+        </Hyperlink>
+        <Hyperlink alignment="CENTER" contentDisplay="CENTER" disable="false" effect="$x3" font="$x2" graphicTextGap="6.0" mouseTransparent="false" prefWidth="150.0" style="" text="Forums" textOverrun="ELLIPSIS" underline="false" visited="true" wrapText="true" HBox.margin="$x4">
+          <textFill>
+            <Color blue="0.000" green="0.620" red="1.000" fx:id="x5" />
+          </textFill>
+        </Hyperlink>
+        <Hyperlink alignment="CENTER" contentDisplay="CENTER" disable="false" effect="$x3" font="$x2" graphicTextGap="6.0" mouseTransparent="false" prefWidth="150.0" style="" text="Highscores" textFill="$x5" textOverrun="ELLIPSIS" underline="false" visited="true" wrapText="true" HBox.margin="$x4" />
+        <Hyperlink alignment="CENTER" contentDisplay="CENTER" disable="false" effect="$x3" font="$x2" graphicTextGap="6.0" mouseTransparent="false" prefWidth="150.0" style="" text="Vote" textFill="$x5" textOverrun="ELLIPSIS" underline="false" visited="true" wrapText="true" HBox.margin="$x4" />
+        <Hyperlink alignment="CENTER" contentDisplay="CENTER" disable="false" effect="$x3" font="$x2" graphicTextGap="6.0" mouseTransparent="false" prefWidth="150.0" style="" text="Donate" textFill="$x5" textOverrun="ELLIPSIS" underline="false" visited="true" wrapText="true" HBox.margin="$x4" />
+      </children>
+    </HBox>
+    <Pane prefHeight="513.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="87.0">
+      <children>
+        <Line endX="1050.0" startX="0.0" startY="0.0" stroke="WHITE" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
