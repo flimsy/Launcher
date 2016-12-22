@@ -15,7 +15,7 @@ public class Main extends Application {
         String css = this.getClass().getResource("/assets/style.css").toExternalForm();
         root.getStylesheets().add(css);
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("TredingFour");
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(true);
         primaryStage.show();
